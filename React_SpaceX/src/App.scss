@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+#app {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+    padding: 0;
+    margin: 0;
+    background: url('./images/background.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+	button{
+		&.add {
+		    position: fixed;
+		    top: 15px;
+		    border: 1px solid #000000;
+		    border-radius: 8px;
+		    color: #ffffff;
+		    background-color: #000000;
+		    cursor: pointer;
+		    right: 300px;
+		    padding: 7px;
+		    z-index: 2;
+		    box-shadow: inset -2px -2px 4px gray;
+		    &:hover {
+		    	color:  #000000;
+			   	background-color: #ffffff;
+			   	box-shadow: inset 2px 2px 4px gray;
+		    }	
+		}
+		&.sort {
+		    position: fixed;
+		    top: 19px;
+		    left: 23px;
+		    z-index: 4;
+		    padding: 4px 20px;
+		    border-radius: 7px;
+		    border: 1px solid black;
+		    cursor: pointer;
+		    outline: none;
+		    background-color: #051937;
+		    color: white;
+		    &:hover {
+		    	border: 1px solid #051937;
+		    	color: #051937;
+		    	background-color: #698231;
+		    }
+		}
+	}
+}

@@ -1,0 +1,49 @@
+.card {
+    font-size: 17px;
+    font-family: monospace;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    color: #bebebe;
+    font-weight: 600;
+    text-shadow: 0.5px 0.5px 1px black;
+    background-color: #4a44c0;
+    border: 1px solid #bebebe;
+    &:hover {
+        box-shadow: 4px 4px 7px gray, -4px 4px 7px gray;
+    }
+    span {
+    	 display: block;
+         font-weight: 100;
+  		 margin: 0;
+    }
+    img {
+        position: absolute;
+        display: block;
+        width: 71px;
+        bottom: 5px;
+        right: 9px;
+     }
+    div {
+        &.more {
+            position: absolute;
+            right: 1px;
+            top: 12px;
+            padding: 0;
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            img {
+                display: block;
+                width: 100%;
+                cursor: pointer;
+                &:hover {
+                    width: 120%;
+                }
+            }  
+        }
+    }
+}
