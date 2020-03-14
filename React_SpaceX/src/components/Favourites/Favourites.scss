@@ -1,0 +1,20 @@
+.favourites {
+    width: 180px;
+    min-height: 100px;
+    position: absolute;
+    top: 40px;
+    right: 62px;
+    height: 100%;
+    padding: 10px;
+    h3 {
+    	padding: 3px;
+	    margin: 0 0 21px 0;
+	    text-align: center;
+	    color: white;
+	    text-shadow: 1px 1px 2px black;
+	    background-color: #A8EB12;
+	    border-radius: 13px;
+	    box-shadow: 1px 1px 2px #add8e6;
+	    border: 1px solid gray;
+    }
+}

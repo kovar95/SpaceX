@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
-import './Cards.scss';
-import {Card} from '../Card/Card';
+import './Favourites.scss';
+import {Fav} from '../Fav/Fav';
 
-class Cards extends Component{
+class Favourites extends Component{
 
 	render() {
-		const {moreDetails, missions, addToFavourites} = this.props;
+		const {moreDetails, missions} = this.props;
 		return (
-			<div className="cards">
-			{missions.map( element => <Card 
+			<div className="favourites">
+			<h3>Favourite flights</h3>
+			{missions.map( element => <Fav 
 										key={element.id}
 										uniqueId={element.id}
 										flightNumber={element.flight_number}
@@ -16,7 +17,6 @@ class Cards extends Component{
 										imageLink={element.links.mission_patch_small}
 										missionName={element.mission_name}
 										moreDetails={moreDetails}
-										addToFavourites={addToFavourites}
 										element={element}
 									  />
 						)
@@ -26,4 +26,4 @@ class Cards extends Component{
 	}
 }
 
-export {Cards};
+export {Favourites};
